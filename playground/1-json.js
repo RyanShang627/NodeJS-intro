@@ -14,3 +14,12 @@ const bookJSON = JSON.stringify(book);
 
 // Save the data in JSON format into a json file
 fs.writeFileSync('1-json.json', bookJSON);
+
+// Note: the dataBuffer is a string of binary code
+const dataBuffer = fs.readFileSync('1-json.json');
+// The dataBuffer.toString() gets the JSON data
+const dataJSON = dataBuffer.toString();
+// The data is JS Object format
+const data = JSON.parse(dataJSON);
+
+console.log(data.title);
