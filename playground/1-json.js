@@ -4,6 +4,7 @@
 
 const fs = require('fs');
 
+/** 
 const book = {
   title: 'Ego is the Enemy',
   author: 'Ryan Holiday',
@@ -23,3 +24,14 @@ const dataJSON = dataBuffer.toString();
 const data = JSON.parse(dataJSON);
 
 console.log(data.title);
+
+*/
+
+const inputJSON = fs.readFileSync('1-json.json');
+
+const userInfo = JSON.parse(inputJSON);
+
+userInfo.name = 'Ryan';
+userInfo.age = 25;
+
+fs.writeFileSync('1-json.json', JSON.stringify(userInfo));
