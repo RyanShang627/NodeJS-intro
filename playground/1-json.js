@@ -27,7 +27,7 @@ console.log(data.title);
 
 */
 
-const inputJSON = fs.readFileSync('1-json.json');
+const inputJSON = fs.readFileSync('1-json.json').toString();
 
 const userInfo = JSON.parse(inputJSON);
 
