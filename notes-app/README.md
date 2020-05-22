@@ -1,15 +1,24 @@
+# Notes App
+Add, remove, read, and list the notes.
+
+## Install dependencies
+
 Install the nodemon module globally:
 ```bash
 npm install -g nodemon
 ```
+Install project dependencies:
+```bash
+npm install
+```
 
-Run the applicaton using nodemon:
+## Run the applicaton using nodemon:
 
 ```bash
 nodemon app.js
 ```
 
-Debug the NodeJS application:
+## Debug the application:
 
 You can add `debugger` inside the javascript file.
 
