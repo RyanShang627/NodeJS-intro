@@ -1,0 +1,16 @@
+.env
+.DS_Store
+.thumbs.db
+node_modules
+/dist
+
+# Test coverages
+test/jest/coverage
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
